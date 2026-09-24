@@ -4,6 +4,7 @@
   <Header/>
   <Hero></Hero>
   <About></About>
+  <Skins></Skins>
 </template>
 
 
@@ -11,6 +12,7 @@
 import About from './components/About.vue';
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
+import Skins from './components/Skins.vue';
 
 
 
@@ -19,7 +21,8 @@ export default {
 components: {
  Header,
  Hero,
- About
+ About,
+ Skins
 },
 
   data() {
