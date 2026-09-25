@@ -6,6 +6,8 @@
   <About></About>
   <Skins></Skins>
   <Projects></Projects>
+  <Contact></Contact>
+  <Footer></Footer>
 </template>
 
 
@@ -15,6 +17,8 @@ import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 import Skins from './components/Skins.vue';
 import Projects from './components/Projects.vue';
+import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 
 
 
@@ -25,7 +29,9 @@ components: {
  Hero,
  About,
  Skins,
- Projects
+ Projects,
+ Contact,
+ Footer
 },
 
   data() {

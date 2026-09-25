@@ -1,31 +1,38 @@
 <template>
   <div>
-    {{ mensaje }}
-    <button @click="saludar">Saludar</button>
+  <p>2026 Toni Titado - Desarrollador web</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MiComponente',
+  name: 'Footer',
 
   data() {
     return {
-      mensaje: 'Hola mundo'
+    
     }
   },
 
   methods: {
-    saludar() {
-      console.log('¡Hola!')
-    }
+   
   },
 
   mounted() {
-    console.log('Componente montado')
+ 
   }
 }
 </script>
 
 <style scoped>
+div{
+  background-color: var(--accent);
+  width: 100%;
+  text-align: center;
+  margin-bottom: auto;
+  padding: 20px;
+}
+p{
+  margin: 0px;
+}
 </style>
