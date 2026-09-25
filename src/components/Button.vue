@@ -1,8 +1,8 @@
 <template>
-  <div>
+ 
    
     <button @click="saludar">{{ buttonText }}</button>
-  </div>
+ 
 </template>
 
 <script>
