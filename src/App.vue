@@ -2,11 +2,11 @@
 
 <template>
   <Header/>
-  <Hero></Hero>
-  <About></About>
-  <Skins></Skins>
-  <Projects></Projects>
-  <Contact></Contact>
+  <Hero id="inicio"></Hero>
+  <About id="sobre_mi"></About>
+  <Skins id="tecnologias"></Skins>
+  <Projects id="proyectos"></Projects>
+  <Contact id="contacto"></Contact>
   <Footer></Footer>
 </template>
 
