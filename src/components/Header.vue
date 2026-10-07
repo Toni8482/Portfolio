@@ -153,10 +153,10 @@ export default {
     font-weight: 600;
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 1024px) {}
 
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
 
     .nav-bar {
         display: none;
@@ -182,6 +182,7 @@ export default {
 
     .menu-desplegable {
         display: block;
+        z-index: 10;
     }
 
 
