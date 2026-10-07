@@ -42,7 +42,7 @@ import Tag from "./Tags.vue";
 
 export default {
     name: 'About',
-    components:{
+    components: {
         Tag
     },
 
@@ -64,7 +64,7 @@ export default {
 
 <style scoped>
 .about {
-    padding: 50px 0 50px;
+    padding: 150px 0 50px;
     display: flex;
     justify-content: center;
 }
@@ -72,23 +72,23 @@ export default {
 .about-div {
     display: flex;
     flex-direction: column;
-
     background-color: var(--surface);
     border: solid 1px;
     border-radius: 30px;
     border-color: var(--border);
     width: 70%;
     padding: 50px;
-      
+    position: relative;
 }
 
 .about-title-img {
-
+    position: absolute;
+    top: -85px;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: -76px;
-   
+    align-items: center;
+    width: 90%;
+
 }
 
 .about-title {
@@ -98,16 +98,52 @@ export default {
     border-radius: 15px;
     border-color: var(--border);
 
-    right: 0px;
+
     height: fit-content;
     box-shadow: 5px 12px;
     font-size: x-large;
 }
 
 .about-img {}
-.about-tags{
+
+.about-text {
+
+    padding: 40px 0 30px 0;
+}
+
+.about-tags {
     display: flex;
-    gap:30px;
+    gap: 30px;
     justify-content: center;
+}
+
+
+@media (max-width: 1024px) {
+ 
+}
+
+
+@media (max-width: 768px) {
+  
+.about-title-img {
+   flex-direction: column-reverse;
+   gap: 30px;
+ top: -25px;
+   width: auto;
+}
+.about-text {
+
+    padding: 180px 0 30px 0;
+}
+
+
+.about-tags {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.about-tags {
+  text-align: center;
+}
 }
 </style>
