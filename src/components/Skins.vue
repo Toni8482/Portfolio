@@ -1,18 +1,19 @@
 <template>
-  <div class="skins"> <div class="skins-title">
+  <div class="skins">
+
+    <div class="skins-section">
+      <div class="skins-title">
         <h3>Tegnologias</h3>
       </div>
-    <div class="skins-section">
-     
-    
+      <div class="cards">
         <div class="skins-card">
-          
+
           <div class="card-title">
 
-  <img src="../assets/Vector.svg" alt="icon">
-          <h3> Backend</h3>
-        </div>
-         
+            <img src="../assets/Vector.svg" alt="icon">
+            <h3> Backend</h3>
+          </div>
+
           <div class="card-logos">
             <div> <img src="../assets/logos/logos_mysql.png" alt="MySql">
               <span>Mysql</span>
@@ -28,12 +29,12 @@
         </div>
         <div class="skins-card">
 
-            <div class="card-title">
+          <div class="card-title">
 
-  <img src="../assets/Monitor.svg" alt="icon">
-        <h3>Frontend</h3>
-        </div>
-         
+            <img src="../assets/Monitor.svg" alt="icon">
+            <h3>Frontend</h3>
+          </div>
+
           <div class="card-logos">
             <div> <img src="../assets/logos/logos_html-5.png" alt="Html">
               <span>Html</span>
@@ -51,12 +52,12 @@
         </div>
         <div class="skins-card">
 
-            <div class="card-title">
+          <div class="card-title">
 
- <img src="../assets/Tools.svg" alt="icon">
-          <h3>Herramientas</h3>
-        </div>
-        
+            <img src="../assets/Tools.svg" alt="icon">
+            <h3>Herramientas</h3>
+          </div>
+
           <div class="card-logos">
             <div> <img src="../assets/logos/devicon_git-wordmark.png" alt="Git">
               <span>Git</span>
@@ -74,7 +75,8 @@
         </div>
       </div>
     </div>
-  
+  </div>
+
 </template>
 
 <script>
@@ -100,36 +102,48 @@ export default {
 <style scoped>
 .skins {
   padding: 30px 0 30px;
+ 
 }
-.card-title{
- display: flex;
- gap: 10px;
+
+.card-title {
+  display: flex;
+  gap: 10px;
+  padding: 30px 0 30px 0;
 }
+
 .skins-title {
   background-color: var(--surface);
   border: solid;
   border-color: var(--boder);
   border-radius: 15px;
   padding: 10px;
-  top: 40px;
-  right: -150px;
-  position: relative;
+  top: -30px;
+  right: 260px;
+  position: absolute;
   height: fit-content;
-width: fit-content;
+  width: fit-content;
   box-shadow: 5px 12px;
-    font-size: x-large;
-     background-color: #ffffff;
+  font-size: x-large;
+  background-color: #ffffff;
 }
 
 .skins-section {
   background-color: var(--accent);
   width: 100%;
   display: flex;
-
-  gap: 50px;
+  
   justify-content: center;
   align-items: center;
-  padding: 80px 0 30px 0;
+  padding: 70px 10px 30px 10px;
+  position: relative;
+}
+
+.cards {
+
+   display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+  gap: 50px;
 }
 
 .skins-card {
@@ -164,5 +178,18 @@ width: fit-content;
   width: 60px;
   height: 40px;
   object-fit: contain;
+}
+
+@media (max-width: 1024px) {}
+
+
+@media (max-width: 768px) {
+
+.skins-title {
+ 
+  
+  right: 50%;
+ 
+}
 }
 </style>
