@@ -37,18 +37,36 @@ export default {
 </script>
 
 <style scoped>
-.section-contact{
+.section-contact {
     display: flex;
     gap: 30px;
     padding: 150px;
     align-items: start;
     justify-content: center;
-}
-.contact-text{
-    width: 50%;
+
 }
 
-.contact-form{
-    width: 50%;
+.contact-text,
+.contact-form {
+    flex-basis: 50%;
 }
+
+
+
+@media (max-width: 1024px) {
+    .section-contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .contact-text,
+    .contact-form {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {}
 </style>
