@@ -58,28 +58,27 @@ export default {
 
 <style scoped>
 .card {
-
-
   background-color: var(--surface);
   border-radius: 15px;
   border: solid;
   display: flex;
-
-  padding: 50px;
+  flex-wrap: wrap;
+  padding: 15px;
   gap: 50px;
+  justify-content: center;
 }
 
 .card-text {
 
   padding: 50px;
-  width: 45%;
+  flex-basis: 40%;
 }
 
 .card-img {
   display: flex;
   flex-direction: column;
-  
-  gap: 40px;
+ flex-basis: 55%;
+  gap: 30px;
 }
 
 .imgs-projects {
@@ -91,7 +90,6 @@ export default {
 }
 
 .tags-projects {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,14 +97,15 @@ export default {
 }
 
 #img-phone {
- object-fit: contain;
- width: 15%;
-   margin-top: auto;
- 
+  object-fit: contain;
+  width: 14%;
+  margin-top: auto;
+
 }
 
-#img-laptop { object-fit: contain;
-width: 80%;
+#img-laptop {
+  object-fit: contain;
+  width: 84%;
   margin-top: auto;
 }
 
@@ -116,8 +115,16 @@ width: 80%;
 }
 
 .btn-card {
-font-size: large;
-font-weight: bold;
+  font-size: large;
+  font-weight: bold;
   padding: 10px;
+}
+
+@media (max-width: 1382px) {
+   .card-text, .card-img {
+
+ 
+  flex-basis: 95%;
+}
 }
 </style>

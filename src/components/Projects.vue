@@ -5,9 +5,11 @@
       <div class="projects-title">
         <h3>Proyectos</h3>
       </div>
+      <div class="cards">
       <Card></Card>
       <Card></Card>
       <Card></Card>
+      </div>
     </div>
   </div>
 </template>
@@ -49,8 +51,8 @@ export default {
   border-color: var(--boder);
   border-radius: 15px;
   padding: 10px;
-  top: 40px;
-  right: -50px;
+ top: -30px;
+  right: 250px;
   position: absolute;
   height: fit-content;
   width: fit-content;
@@ -65,10 +67,50 @@ export default {
   background-color: var(--accent);
   border: solid;
   border-radius: 30px;
+ 
+  position: relative;
+}
+.cards{
   display: flex;
   flex-direction: column;
   padding: 80px;
   gap: 30px;
-  position: relative;
+}
+
+
+@media (max-width: 1024px) {
+ 
+   .section-projects {
+  padding: 15px;
+}
+.cards{
+ 
+  padding: 15px;
+ 
+}
+
+
+
+}
+
+
+@media (max-width: 768px) {
+ .section-projects {
+  padding: 10px;
+}
+.cards{
+ 
+  padding: 10px;
+ 
+}
+
+
+.projects-title {
+ 
+ top: -30px;
+  right: 150px;
+
+}
+
 }
 </style>
